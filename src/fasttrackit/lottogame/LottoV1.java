@@ -3,6 +3,9 @@ package fasttrackit.lottogame;
 import java.util.*;
 
 public class LottoV1 {
+    private static final int MAXVALUE = 50;
+    private static final int MAX_EXTRACTIONS_NUMBER= 5;
+
 
     public static void main(String[] args) {
 
@@ -49,7 +52,7 @@ public class LottoV1 {
         int[] sixGeneratedNumbers = new int[6];
         for (int i = 0; i < 6; i++) {
 
-            int nr = lottoMachine.nextInt(49) + 1;
+            int nr = lottoMachine.nextInt(48) + 1;
 
             //check if nr is not already in the array, if it is generate a new one
             for (int j = 0; j < i; j++)
